@@ -8,16 +8,17 @@ version = "0.1.0"
 description = "Bridge Farming Simulator 25 server stats into Base44."
 readme = "README.md"
 authors = [
-  {name = "devkawteam"}
+  { name = "devkawteam" }
 ]
-license = {text = "MIT"}
+license = { text = "MIT" }
 requires-python = ">=3.10"
+
+dependencies = [
+  "requests>=2.0.0"
+]
 
 [project.urls]
 Homepage = "https://github.com/devkawteam/fs25-farm-bridge"
-
-[project.dependencies]
-requests = ">=2.0.0"
 
 [project.scripts]
 fs25-farm-bridge = "fs25_farm_bridge.bridge:main"
