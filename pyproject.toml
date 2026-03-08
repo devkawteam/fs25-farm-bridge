@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fs25-farm-bridge"
+version = "0.1.0"
+description = "Bridge Farming Simulator 25 server stats into Base44."
+readme = "README.md"
+authors = [
+  {name = "devkawteam"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/devkawteam/fs25-farm-bridge"
+
+[project.dependencies]
+requests = ">=2.0.0"
+
+[project.scripts]
+fs25-farm-bridge = "fs25_farm_bridge.bridge:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
