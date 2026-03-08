@@ -25,6 +25,6 @@ jobs:
 
       - name: Run farm bridge
         env:
-          BASE44_API_URL: ${{007ff83f5dea4651a7960eb736b6e86c}}
+          BASE44_API_URL: ${{ secrets.BASE44_API_URL }}
         run: |
-          python farm_bridge.py
+          PYTHONPATH=src python -m fs25_farm_bridge.bridge
