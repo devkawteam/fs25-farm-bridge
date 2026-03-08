@@ -2,6 +2,12 @@ import os
 import requests
 import xml.etree.ElementTree as ET
 
+from fs25_farm_bridge.savegame_parser import (
+    parse_environment,
+    parse_farms,
+    parse_fields,
+)
+
 FEED_URL = "http://144.126.158.162:9120/feed/dedicated-server-stats.xml?code=mt3bqE0kBPlcS8Ld"
 BASE44_API = os.environ.get("BASE44_API_URL")
 BASE44_API_KEY = os.environ.get("BASE44_API_KEY")
